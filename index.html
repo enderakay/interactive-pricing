@@ -3,37 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+ .ididit{position: fixed;
+   padding: 6px;
+    bottom: 0; right: 0;
+    width: 300px; 
+    border: dotted 1px red; color:black;
+     background-color: seagreen}
+ 
+     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+ b{color:  rgb(41, 51,86); font-size: 25px;}
   </style>
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <div class="container">
+     <div class="heading1"> 
+     <p><b>Simple, traffic-based pricing</b><br>
+     Sign-up for our 30-day trial. No credit card required. </p> 
+     
+     </div>
 
-  Pageviews
-  $ /month
+    <div class="price">
+        Pageviews
+       $ /month
+       <div class="priceslider">
+        <input type="range" id="jsprice" name="jsprice" min="0" max="100">
+      
+        <ol>
+          <li>Monthly Billing</li>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <li>Yearly Billing </li>
+          <li class="discount">25% discount</li>
+        </ol>
+       
+       
+       
+    </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+    <div class="listed">
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+     <div class="btn-trial">
+    <button>Start my trial  </button>   
+     </div>
+   
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+    </div> 
+    </div>
+
+</div>
+  
+<div class="ididit">
+   This div tag and the page 've designed by alper akay
+</div>
 </body>
 </html>
